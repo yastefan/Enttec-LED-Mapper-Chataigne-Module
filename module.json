@@ -3,7 +3,7 @@
   "type":"OSC",
   "path":"Software",
   
-  "version":"0.1.0",
+  "version":"0.2.0",
   "description":"A Chataigne module to control Enttec LED Mapper ELM via OSC",
   "url":"https://github.com/yastefan/Enttec-LED-Mapper-Chataigne-Module",
   "downloadURL":"https://github.com/yastefan/Enttec-LED-Mapper-Chataigne-Module/archive/refs/heads/main.zip",
@@ -41,7 +41,7 @@
       "parameters":
       {
         "Stage": {"type":"String", "default":"Stage01"},
-        "Intensity": {"type": "Float", "min":0, "max":1, "default":0, "ui":"slider", "useForMapping":true}
+        "Intensity": {"type": "Float", "min":0, "max":1, "default":0, "ui":"slider", "mappingIndex": 0}
       }
     },
     "Change Speed":
@@ -51,7 +51,7 @@
       "parameters":
       {
         "Stage": {"type":"String", "default":"Stage01"},
-        "Speed": {"type": "Float", "min":0, "max":10, "default":1, "ui":"slider", "useForMapping":true}
+        "Speed": {"type": "Float", "min":0, "max":10, "default":1, "ui":"slider", "mappingIndex": 0}
       }
     },
     "Change Color":
@@ -61,7 +61,7 @@
       "parameters":
       {
         "Stage": {"type":"String", "default":"Stage01"},
-        "Color": {"type": "Color", "default": [1,0,0,1], "useForMapping":true}
+        "Color": {"type": "Color", "default": [1,0,0,1]}
       }
     },
     "Change Media":
@@ -71,7 +71,7 @@
       "parameters":
       {
         "Stage": {"type":"String", "default":"Stage01"},
-        "Media": {"type": "Integer", "min":0, "max":255, "default":0, "useForMapping":true}
+        "Media": {"type": "Integer", "min":0, "max":255, "default":0}
       }
     }
   }

@@ -19,3 +19,7 @@ function changeSpeed(stage, speed) {
 function changeColor(stage, color) {
   local.send("/elm/stages/" + stage + "/live/rgb", color[0], color[1], color[2]);
 }
+
+function changeMedia(stage, media) {
+  local.send("/elm/stages/" + stage + "/live/media", media);
+}
